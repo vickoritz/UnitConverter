@@ -1,26 +1,27 @@
 
+//1 meter = 3.2808399 Feet
+//1 foot = 0.3048 Meters
 
-let unitEl = document.getElementById("unit-el")
+//1 liter = 0,26 gal
+//1 gal = 3,7854096684 l
 
-let lenghtEl = document.getElementByID("lenght-el")
-let volumeEl = document.getElementByID("volume-el")
-let massEl = document.getElementByID("mass-el")
+//1 kilogram = 2.20462 pund
+//1 pound = 0.453591830542594 kilogram
 
-let unit = 20
+let unit = 10
+let meterFeet = 3.2808399
+let feetMeeter = 0.3048
 
+document.getElementById("unit-el").textContent = unit
 
-function startConversion() {    
-    
+let meterEl = document.getElementByID("meter-el")
+let feetEl = document.getElementByID("feet-el")
+
+function startConversion() {
+    lenght()
 }
 
-
-
-
-
-function startGame() {
-    isAlive = true
-    let firstCard = getRandomCard()
-    let secondCard = getRandomCard()
-    cards = [firstCard, secondCard]
-    sum = firstCard + secondCard
-    renderGame()
+function lenght() {
+    let feet = unit * 3.2808399
+    feetEl.textContent = feet + " feet"
+}
