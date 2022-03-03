@@ -3,31 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="index.css">
     <title>Unit Converter</title>
 </head>
 <body>
-        <div id="heading">
-            <br>
-            <h3>Metric/Imperial unit conversion</h3>
-            <h1 id="unit-el"></h1>
-            <!-- <input type="number" id="number-el" min="1" max="1000"> -->
-            <button onclick="startConversion()">Convert</button>
-            <br>
-        </div>
-        <div>
-            <br>
-            <h3>Length (Meter/Feet)</h3>
-            <span id="meter-el">0 meters = 0.000 feet |</span>
-            <span id="feet-el">0 feet = 0.000 meters</span>
-            <br>
-            <!-- <p id="lenght-el">0 meters = 0.000 feet | 0 feet = 0.000 meters</p> -->
-            <h3>Volume (Liters/Gallons)</h3>
-            <p id="volume-el">0 liters = 0.000 gallons | 0 gallons = 0.000 liters</p>
-            <h3 id>Mass (Kilograms/Pounds)</h3>
-            <p id="mass-el">0 kilos = 0.000 pounds | 0 pounds = 0.000 kilos</p>
-        </div>
+    <div id="heading">
+        <br>
+        <h3>Metric/Imperial unit conversion</h3>
+        <h1 id="unit-el"></h1>
+        <!-- <input type="number" id="number-el" min="1" max="1000"> -->
+        <button class="button" onclick="startConversion()">Convert</button>
+        <br>
+    </div>
+    <div>
+        <br>
+        <h3>Length (Meter/Feet)</h3>
+        <span id="meter-el"></span>
+        <span id="feet-el">Feet: </span>
+        <br>
+        <!-- <p id="lenght-el">0 meters = 0.000 feet | 0 feet = 0.000 meters</p> -->
+        <h3>Volume (Liters/Gallons)</h3>
+        <p id="volume-el">0 liters = 0.000 gallons | 0 gallons = 0.000 liters</p>
+        <h3 id>Mass (Kilograms/Pounds)</h3>
+        <p id="mass-el">0 kilos = 0.000 pounds | 0 pounds = 0.000 kilos</p>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
