@@ -34,7 +34,10 @@ h1 {
 h3 {
   color: rgb(255, 255, 255);
   margin: 0px;
-  padding: 0px;
+}
+
+span {
+  color: rgba(210, 210, 210, 1);
 }
 
 p {
