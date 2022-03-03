@@ -8,14 +8,13 @@
 //1 kilogram = 2.20462 pund
 //1 pound = 0.453591830542594 kilogram
 
-let unit = 10
-let meterFeet = 3.2808399
-let feetMeeter = 0.3048
-
+let unit = 20
 document.getElementById("unit-el").textContent = unit
 
-let meterEl = document.getElementByID("meter-el")
-let feetEl = document.getElementByID("feet-el")
+//let meterEl = document.getElementById("meter-el")
+
+
+let feetEl = document.getElementById("feet-el")
 
 function startConversion() {
     lenght()
@@ -23,5 +22,5 @@ function startConversion() {
 
 function lenght() {
     let feet = unit * 3.2808399
-    feetEl.textContent = feet + " feet"
+    feetEl.textContent = feet
 }
